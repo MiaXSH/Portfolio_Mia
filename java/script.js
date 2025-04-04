@@ -27,7 +27,26 @@ clickingImage.forEach(function(item) { //https://www.w3schools.com/jsref/jsref_f
 });
 
 
+let paragraphs = intro.getElementsByTagName('p');
+var title = document.getElementById('title');
 
+// title.onclick = function(){
+//     intro.style.display = 'block';
+// }
+
+title.onclick = function () {
+    for (let i = 0; i < paragraphs.length; i++) {
+        setTimeout(function(){
+            paragraphs[i].style.display = 'block';
+
+        }, i*200);
+    }
+
+    // let h1 = topPart.getElementsByTagName('h1');
+    //     if(h1.style.color="rgb(0, 0, 0)"){
+    //         paragraphs[i].style.display = 'none';
+    //     }
+};
 
 
 var videoModal = document.getElementById('videoModal');

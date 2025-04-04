@@ -3,6 +3,7 @@ body{
 }
 
 h1{
+    height: 0;
     font-size: 10vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(0, 0, 0);
@@ -12,7 +13,19 @@ h1{
     transition-duration: 2s;
 }
 
+p{
+    width: 50vw;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 30 auto;
+    display: none;
+}
+
+
 h1:hover{
+    height: 20vh;
     color: white;
 }
 
@@ -100,9 +113,16 @@ h1:hover{
     width: 80%;
 
     /* white-space: normal; */
-    word-wrap: normal;
-    word-break: break-all;
     margin: 0 auto;
+    margin-bottom: 10vh;
+
+    /* word-wrap: normal; */
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    /* white-space: nowrap; */
+
+    /* display:none; */
+
 }
 
 
@@ -118,10 +138,16 @@ h1:hover{
     padding: 10px 0;
     width: 80%;
 
-    /* white-space: normal; */
-    word-wrap: normal;
-    word-break: break-all;
     margin: 0 auto;
+    margin-bottom: 10vh;
+
+    /* white-space: nowrap;
+    word-wrap: normal; */
+    word-break: keep-all;
+    overflow-wrap: break-word;
+
+    /* display:none; */
+
 }
 
 
@@ -148,6 +174,7 @@ h1:hover{
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    white-space: nowrap;
 }
 
 #VideoCaption {
@@ -160,6 +187,8 @@ h1:hover{
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    white-space: nowrap;
+
 }
 
 
@@ -168,6 +197,8 @@ h1:hover{
     display:block;
     width: 80%;
     max-width:700px;
+    white-space: nowrap;
+
 }
 
 .modal-content, #ImageCaption, #VideoCaption, #videoIntro, #imageIntro {
